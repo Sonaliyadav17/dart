@@ -1,0 +1,47 @@
+// import package  --->  'dart.io';
+
+// stdin.readLineSync()!;   ---->   String input
+//int? n1 -> int.parse(stdin.readLineSync()!);  --------------------->  int input
+//double? n1 -> int.parse(stdin.readLineSync()!);  --------------------->  double input
+
+// ! -----> to ensure that it must not be empty
+// ? -----> it can be null
+
+import 'dart:io';
+
+void main() {
+  stdout.write("enter name: ");
+  String name = stdin.readLineSync()!;
+  print(" hello $name . How are you? pleasure to see you.");
+  stdout.write("enter a number");
+
+  int? n1 = int.parse(stdin.readLineSync()!);
+
+  stdout.write("second");
+  int? n2 = int.parse(stdin.readLineSync()!);
+
+  stdout.write("3rd");
+
+  int? n3 = int.parse(stdin.readLineSync()!);
+
+  int sum = n1 + n2 + n3;
+  stdout.write("sum");
+  print("sum: $sum");
+
+  int mult = n1 * n2 * n3;
+
+  print("mult: $mult");
+
+  int l, s;
+  if (sum < mult) {
+    l = mult;
+    s = sum;
+  } else {
+    l = sum;
+    s = mult;
+  }
+
+  int diff = l - s;
+
+  print("diff: $diff");
+}
