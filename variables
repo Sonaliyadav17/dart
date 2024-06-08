@@ -1,0 +1,19 @@
+// for storing values
+// created by using var keyword and also created by writing data type before variable name and then its value 
+//var keyword automaatically knows its data type that can be used 
+
+// syntax  --  var <variable name> = variable value
+//  "var" <variable> can be null but any datatype <variable> can be null, therefore, 
+// var c; is correct but datatype c; is not correct
+
+// rules for naming variables---
+// name should be start from [a - z] or [A - Z]
+// no space symbols keywords
+// case sensitive
+// underscore(_) and dollar {$) are allowed 
+
+void main() {
+  var a = 10;
+  var b = 10;
+  var sum = a + b;
+}
