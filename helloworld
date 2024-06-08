@@ -1,0 +1,8 @@
+void main(){
+  stdout.write("hello world");
+  print("nice");
+}
+// stdout.write for no new line
+// print for new line
+
+  
