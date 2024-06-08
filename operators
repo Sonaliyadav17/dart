@@ -1,0 +1,70 @@
+void main() {
+  int a = 10;
+  int b = 10;
+
+  // assignment operators
+  print("sum: a+b = ${a + b}");
+  print("sub: a-b = ${a - b}");
+  print("mult: a*b = ${a * b}");
+  print("divide: a+b = ${a / b}");
+  print("modulus: a%b = ${a % b}");
+  print("find quotient: a~/b = ${a ~/ b}");
+  print("unary minus: -(a+b) = ${-(a + b)}");
+
+  // dart unary operators(post and pre)
+  print("a++: ${a++}");
+  print("a: $a");
+  print("a-- : ${a--}");
+  print("a: $a");
+  print("++a : ${++a}");
+  print("--a: ${--a}");
+
+  // tertiary or conditional operators
+  a = 15;
+
+  var d = a < 20 ? "yes" : "no";
+  print("d is $d");
+
+  print(a > 10 ? "yes" : "no");
+
+  var c = null;
+  var v = c ?? a;
+  print(v);
+
+  // logical operator( && , || , !)
+  int s = 10;
+  int r = 20;
+  if (s > 5 && r < 40) {
+    print("logical and");
+  }
+  if (s > 100 || r < 40) {
+    print("logical or");
+  }
+  var t = !(s > 20);
+  print(t);
+
+  // Dart Cascade notation Operators
+//The Cascade notation Operators (..) is used to evaluate a series of operation on the same object.
+//It is an identical as the method chaining that avoids several of steps, and we don't need store results in temporary variables.
+
+// data type test operators
+
+// 1. "as"	It is used for typecast.
+// 2.	"is"	It returns TRUE if the object has specified type.
+// 3.	"is!	It returns TRUE if the object has not specified type.
+  var num = 10;
+  var name = "JavaTpoint";
+  print(num is int);
+  print(name is! int);
+
+// relational operator
+  int p = 10;
+  int q = 20;
+  print(p < q);
+  print(p > q);
+  print(p <= q);
+  print(p >= q);
+  print(p == q);
+  print(p != q);
+
+}
