@@ -1,1 +1,16 @@
+// value cann't be changed after assigning 'const' to any variable
+// its final value of that variable
 
+void main() {
+  int num1 = 20;
+  num1 = 30;
+  print(num1);
+
+  const int num2 = 20;
+  
+  print(num2);
+
+  final int num3 = 20;
+  
+  print(num3);
+}
