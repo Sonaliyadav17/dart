@@ -1,4 +1,6 @@
-// import package  --->  'dart.io';
+// import package  --->  'dart.io'; for taking input
+// 4 datatype in dart language 
+String , int , double , bool
 
 // stdin.readLineSync()!;   ---->   String input
 //int? n1 -> int.parse(stdin.readLineSync()!);  --------------------->  int input
@@ -6,6 +8,8 @@
 
 // ! -----> to ensure that it must not be empty
 // ? -----> it can be null
+
+
 
 import 'dart:io';
 
@@ -44,4 +48,7 @@ void main() {
   int diff = l - s;
 
   print("diff: $diff");
+
+bool a = true;
+  print("a is $a");
 }
